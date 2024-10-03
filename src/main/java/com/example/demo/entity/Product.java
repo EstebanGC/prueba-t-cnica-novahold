@@ -24,7 +24,7 @@ public class Product {
     private String name;
 
     @Column(name="available")
-    private boolean available;
+    private Boolean available;
 
     @Column(name="min-units")
     private int minUnits;

@@ -1,7 +1,6 @@
 package com.example.demo.service;
 
 import com.example.demo.dto.ProductDto;
-import com.example.demo.entity.Product;
 
 import java.util.List;
 
@@ -11,7 +10,7 @@ public interface ProductService {
 
     ProductDto createProduct(ProductDto productDto);
 
-    ProductDto updateProduct(ProductDto productDto, int productId);
+    ProductDto updateProduct(ProductDto productDto);
 
     void deleteProduct(int productId);
 }

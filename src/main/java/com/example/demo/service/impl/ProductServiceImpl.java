@@ -5,6 +5,7 @@ import com.example.demo.dto.ProductDto;
 import com.example.demo.entity.Product;
 import com.example.demo.repository.ProductRepository;
 import com.example.demo.service.ProductService;
+import com.example.demo.util.BadArgumentsException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,7 +29,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public ProductDto createProduct(ProductDto productDto) throws Exception {
+    public ProductDto createProduct(ProductDto productDto) throws BadArgumentsException {
         Product product = mapper.fromProductDtoToEntity(productDto);
 
         Product savedProduct = productRepository.save(product);
@@ -36,10 +37,12 @@ public class ProductServiceImpl implements ProductService {
         return mapper.fromEntityToProductDto(savedProduct);
     }
 
-    public ProductDto updateProduct(ProductDto productDto, int productId) {
+    @Override
+    public ProductDto updateProduct(ProductDto productDto) {
         return mapper.fromEntityToProductDto(productRepository.save(mapper.fromProductDtoToEntity(productDto)));
     }
 
+    @Override
     public void deleteProduct(int productId) {
         productRepository.deleteById(productId);
     }

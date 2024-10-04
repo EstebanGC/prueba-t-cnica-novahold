@@ -25,12 +25,12 @@ public class Controller {
         return productService.createProduct(productDto);
     }
 
-    @PutMapping("update/cyclist")
+    @PutMapping("update/product")
     public ProductDto updateProduct(@RequestBody ProductDto productDto) {
         return productService.updateProduct(productDto);
     }
 
-    @DeleteMapping("delete/product")
+    @DeleteMapping("delete/product/{productId}")
     public void deleteProduct(@PathVariable int productId){
         productService.deleteProduct(productId);
     }

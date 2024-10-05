@@ -36,14 +36,12 @@
             int maxUnits = Integer.parseInt(request.getParameter("maxUnits"));
 
             try {
-                // URL del endpoint de la API para el POST
                 String apiUrl = "http://localhost:8080/save/product";
 
                 URL url = new URL(apiUrl);
 
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
-                // Configurar la conexión como POST
                 con.setRequestMethod("POST");
                 con.setRequestProperty("Content-Type", "application/json; utf-8");
                 con.setRequestProperty("Accept", "application/json");
@@ -56,7 +54,6 @@
                     writer.flush();
                 }
 
-                // Leer la respuesta de la API
                 BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
                 String inputLine;
                 StringBuffer content = new StringBuffer();
@@ -66,7 +63,6 @@
                 in.close();
                 con.disconnect();
 
-                // Mostrar el resultado de la petición POST
                 out.println("<h3>Producto agregado correctamente:</h3>");
                 out.println("<pre>" + content.toString() + "</pre>");
             } catch (Exception e) {

@@ -1,0 +1,119 @@
+body {
+    background: linear-gradient(to right, #003366, #66ccff);
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #7d7d7d; /* Color de fondo gris ratón */
+    overflow: hidden; /* Para evitar el desbordamiento */
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Alinear verticalmente los elementos */
+    padding: 10px 20px; /* Espaciado superior e inferior */
+}
+
+.navbar h1 {
+    margin-right: auto; /* Empuja el título a la izquierda */
+    color: white; /* Color del título */
+}
+
+.navbar a {
+    color: white; /* Color del texto de los enlaces */
+    padding: 14px 20px; /* Espaciado alrededor del texto */
+    text-decoration: none; /* Sin subrayado */
+    text-align: center; /* Centrar el texto */
+}
+
+.navbar a:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para centrar la imagen */
+.image-container {
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+}
+
+img {
+    max-width: 100%; /* Asegurar que la imagen no exceda el ancho */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+/* Estilo para el título */
+h1 {
+    text-align: center; /* Centrar el título */
+    margin-top: 20px; /* Espacio superior */
+}
+
+
+form {
+    width: 50%; /* 50% del ancho de la pantalla */
+    margin: 0 auto; /* Centrar el formulario */
+    padding: 20px; /* Espaciado interno */
+    background-color: grey; /* Fondo blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+label {
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px 0; /
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+}
+
+button {
+    background-color: #0072ff; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espaciado interno reducido para hacer el botón más pequeño */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+    margin: 10px auto; /* Margen superior e inferior, y auto para centrar */
+    display: block; /* Hacer que el botón sea un bloque para centrarlo */
+    width: fit-content; /* Ajustar el ancho al contenido del botón */
+}
+
+button:hover {
+    background-color: #005bb5; /* Color al pasar el mouse sobre el botón */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #0072ff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}

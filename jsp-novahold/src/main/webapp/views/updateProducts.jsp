@@ -1,13 +1,14 @@
 <%@ page import="java.io.BufferedReader, java.io.InputStreamReader, java.net.HttpURLConnection, java.net.URL, java.net.HttpURLConnection, java.io.OutputStream" %>
 <html>
 <head>
-    <title>Update Product</title>
+    <title>Editar un producto</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
-<body>
+<body style="background: linear-gradient(to right, #003366, #66ccff); color: #333; font-family: Arial, sans-serif; margin: 0; padding: 20px;">
     <h1>Update Product</h1>
 
     <form method="post" action="updateProduct.jsp">
-        <label for="productId">Product ID:</label>
+        <label for="productId">Id del producto:</label>
         <input type="text" id="productId" name="productId" required><br><br>
 
         <label for="name">Nombre:</label>

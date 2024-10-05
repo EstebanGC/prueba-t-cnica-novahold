@@ -2,22 +2,30 @@
 <html>
 <head>
     <title>Agregar Producto</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
-<body>
+<body style="background: linear-gradient(to right, #003366, #66ccff); color: #333; font-family: Arial, sans-serif; margin: 0; padding: 20px;">
     <a href="index.jsp">Volver a la pagina principal</a>
     <h1>Agregar Producto</h1>
 
-    <!-- Formulario para ingresar datos del producto -->
+
     <form method="POST">
-        Nombre: <input type="text" name="name" required /><br />
-        Disponible:
-        <select name="available" required>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="available">Disponible:</label>
+        <select id="available" name="available" required>
             <option value="true">Si</option>
             <option value="false">No</option>
-        </select><br />
-        Unidades minimas: <input type="number" name="minUnits" min="0" required /><br />
-        Unidades maximas: <input type="number" name="maxUnits" min="1" required /><br />
-        <input type="submit" value="Agregar Producto" />
+        </select><br /><br />
+
+        <label for="minUnits">Unidades minimas:</label>
+        <input type="number" id="minUnits" name="minUnits" min="0" required /><br /><br />
+
+        <label for="maxUnits">Unidades maximas:</label>
+        <input type="number" id="maxUnits" name="maxUnits" min="1" required /><br /><br />
+
+        <button type="submit">Agregar producto</button>
     </form>
 
     <%

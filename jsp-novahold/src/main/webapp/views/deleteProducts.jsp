@@ -2,8 +2,9 @@
 <html>
 <head>
     <title>Eliminar productos</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
-<body>
+<body style="background: linear-gradient(to right, #003366, #66ccff); color: #333; font-family: Arial, sans-serif; margin: 0; padding: 20px;">
     <h1>Eliminar productos</h1>
 
     <form method="post" action="deleteProduct.jsp">

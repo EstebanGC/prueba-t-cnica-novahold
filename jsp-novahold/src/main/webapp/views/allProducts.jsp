@@ -2,9 +2,10 @@
 <%@ page import="org.json.JSONArray, org.json.JSONObject" %>
 <html>
 <head>
-    <title>Products API</title>
+    <title>Productos</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
-<body>
+<body style="background: linear-gradient(to right, #003366, #66ccff); color: #333; font-family: Arial, sans-serif; margin: 0; padding: 20px;">
     <a href="addProducts.jsp">Agregar Nuevo Producto</a>
     <h1>Lista de Productos</h1>
     <%

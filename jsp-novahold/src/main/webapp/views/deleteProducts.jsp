@@ -14,19 +14,15 @@
     </form>
 
     <%
-        // Verificar si es un POST para eliminar el producto
         if (request.getMethod().equalsIgnoreCase("POST")) {
             try {
-                // Obtener el ID del producto del formulario
                 String productId = request.getParameter("productId");
 
-                // URL del endpoint de la API para eliminar el producto
                 URL url = new URL("http://localhost:8080/delete/product/" + productId);
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 con.setRequestMethod("DELETE");
                 con.setRequestProperty("Accept", "application/json");
 
-                // Leer la respuesta de la API
                 int responseCode = con.getResponseCode();
                 if (responseCode == HttpURLConnection.HTTP_OK) {
                     out.println("<h3>Product deleted successfully!</h3>");
@@ -34,7 +30,6 @@
                     out.println("<h3>Failed to delete product. Response code: " + responseCode + "</h3>");
                 }
 
-                // Cerrar la conexión
                 con.disconnect();
             } catch (Exception e) {
                 e.printStackTrace();

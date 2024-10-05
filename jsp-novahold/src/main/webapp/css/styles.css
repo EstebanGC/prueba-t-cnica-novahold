@@ -7,55 +7,55 @@ body {
 }
 
 .navbar {
-    background-color: #7d7d7d; /* Color de fondo gris ratón */
-    overflow: hidden; /* Para evitar el desbordamiento */
-    display: flex; /* Usar flexbox para alinear elementos */
-    align-items: center; /* Alinear verticalmente los elementos */
-    padding: 10px 20px; /* Espaciado superior e inferior */
+    background-color: #7d7d7d;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .navbar h1 {
-    margin-right: auto; /* Empuja el título a la izquierda */
-    color: white; /* Color del título */
+    margin-right: auto;
+    color: white;
 }
 
 .navbar a {
-    color: white; /* Color del texto de los enlaces */
-    padding: 14px 20px; /* Espaciado alrededor del texto */
-    text-decoration: none; /* Sin subrayado */
-    text-align: center; /* Centrar el texto */
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
 }
 
 .navbar a:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    background-color: #0056b3;
 }
 
-/* Estilo para centrar la imagen */
+
 .image-container {
-    display: flex; /* Usar flexbox para centrar */
-    justify-content: center; /* Centrar horizontalmente */
-    margin-top: 20px; /* Espacio superior */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 img {
-    max-width: 100%; /* Asegurar que la imagen no exceda el ancho */
-    height: auto; /* Mantener la proporción de la imagen */
+    max-width: 100%;
+    height: auto;
 }
 
-/* Estilo para el título */
+
 h1 {
-    text-align: center; /* Centrar el título */
-    margin-top: 20px; /* Espacio superior */
+    text-align: center;
+    margin-top: 20px;
 }
 
 
 form {
-    width: 50%; /* 50% del ancho de la pantalla */
-    margin: 0 auto; /* Centrar el formulario */
-    padding: 20px; /* Espaciado interno */
-    background-color: grey; /* Fondo blanco */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -73,20 +73,20 @@ input {
 }
 
 button {
-    background-color: #0072ff; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 5px 10px; /* Espaciado interno reducido para hacer el botón más pequeño */
-    border-radius: 4px; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
-    font-size: 12px; /* Tamaño de fuente más pequeño */
-    margin: 10px auto; /* Margen superior e inferior, y auto para centrar */
-    display: block; /* Hacer que el botón sea un bloque para centrarlo */
-    width: fit-content; /* Ajustar el ancho al contenido del botón */
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 10px auto;
+    display: block;
+    width: fit-content;
 }
 
 button:hover {
-    background-color: #005bb5; /* Color al pasar el mouse sobre el botón */
+    background-color: #005bb5;
 }
 
 table {
